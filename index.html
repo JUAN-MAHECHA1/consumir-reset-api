@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="pokedex">
+      <h1 class="title">PokeDex</h1>
+
+      <section class="card">
+        <div class="card-header">
+          <h2 class="brand">PokeDex</h2>
+          <div id="pokemon-id" class="pokemon-id">#—</div>
+        </div>
+
+        <div class="image-wrap">
+          <div class="image-bg"></div>
+          <img id="pokemon-image" src="" alt="Imagen del Pokémon" />
+        </div>
+
+        <h2 id="pokemon-name">—</h2>
+        <p id="pokemon-types">Tipo: —</p>
+
+        <div class="search">
+          <input id="search-input" type="text" placeholder="Buscar por nombre o id (ej. pikachu o 25)" />
+          <button id="search-btn" class="btn btn-yellow">Buscar</button>
+        </div>
+
+        <div class="controls">
+          <button id="prev" class="btn">Anterior</button>
+          <button id="random" class="btn btn-yellow">Aleatorio</button>
+          <button id="next" class="btn">Siguiente</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
