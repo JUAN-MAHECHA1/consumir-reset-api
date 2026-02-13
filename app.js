@@ -58,6 +58,12 @@ function updateUI(data){
   imageEl.src = sprite || '';
   imageEl.alt = `Imagen de ${displayName}`;
   idEl.textContent = `#${data.id}`;
+  
+  // establecer fondo dinámico con la imagen del Pokémon
+  if(sprite){
+    document.body.style.backgroundImage = `url('${sprite}')`;
+  }
+  
   // actualizar estado de botones
   // cuando se busca por nombre, data.id nos da el id numérico
   currentId = data.id || currentId;
